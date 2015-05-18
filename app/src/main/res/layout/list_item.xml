@@ -1,0 +1,10 @@
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:textColor="#544A48"
+        android:gravity="start"
+        android:textSize="12sp"
+        android:background="@drawable/bg_color"
+        android:layout_height="48dp" />

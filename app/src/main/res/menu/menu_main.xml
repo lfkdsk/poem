@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/like_item"
+        android:title="@string/like"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dislike"
+        android:icon="@drawable/dislike_item"
+        android:title="@string/dislike"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/collect_item"
+        android:id="@+id/collect"
+        android:title="@string/collect"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.lfk.poem.Collect_item">
+    <item
+        android:id="@+id/dislike_collect"
+        android:icon="@drawable/dislike_item"
+        android:title="@string/dislike"
+        app:showAsAction="always" />
+</menu>

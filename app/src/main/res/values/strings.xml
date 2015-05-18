@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">古诗</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="like">加入收藏</string>
+    <string name="dislike">移除收藏</string>
+    <string name="collect">打开收藏</string>
+    <string name="title_activity_collect">收藏</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_collect_item">内容</string>
+    <string name="title_activity_opening">Opening</string>
+</resources>
