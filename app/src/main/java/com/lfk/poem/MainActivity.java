@@ -42,13 +42,13 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Logger.type(Logger.MODEL_LAUNCHER);
         Typeface typeface = Typeface.createFromAsset(getAssets(),"fonts/font_ksj.ttf");
         textView = (TextView)findViewById(R.id.text_view);
         textView.setTypeface(typeface);
 
         main_layout = (RelativeLayout)findViewById(R.id.main_layout);
-        ChangeBackground();
+        //ChangeBackground();
         FindaPoem();
         swipeLayout = (SwipeRefreshLayout) this.findViewById(R.id.swipe_refresh);
         swipeLayout.setColorScheme(R.color.haah);
@@ -79,26 +79,20 @@ public class MainActivity extends Activity {
         cursor.close();
         database.close();
     }
-    private void ChangeBackground(){
-        int ln = (int) (1 + Math.random() * (5));
-        switch (ln){
-            case 1:
-                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.detail_bg));
-                break;
-            case 2:
-                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.navigation_1));
-                break;
-            case 3:
-                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.navigation_2));
-                break;
-            case 4:
-                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.navigation_3));
-                break;
-            case 5:
-                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.navigation_4));
-                break;
-        }
-    }
+//    private void ChangeBackground(){
+//        int ln = (int) (1 + Math.random() * (3));
+//        switch (ln){
+//            case 1:
+//                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_1));
+//                break;
+//            case 2:
+//                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_2));
+//                break;
+//            case 3:
+//                main_layout.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_3));
+//                break;
+//        }
+//    }
     public SQLiteDatabase openDatabase() {
         try {
             File myDataPath = new File(DB_PATH);
