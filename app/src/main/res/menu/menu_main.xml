@@ -5,15 +5,20 @@
         android:id="@+id/like"
         android:icon="@drawable/like_item"
         android:title="@string/like"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/dislike"
         android:icon="@drawable/dislike_item"
         android:title="@string/dislike"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
     <item
         android:icon="@drawable/collect_item"
         android:id="@+id/collect"
         android:title="@string/collect"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_share"
+        android:showAsAction="ifRoom"
+        android:title="分享"
+        />
 </menu>
